@@ -51,8 +51,8 @@ exports.RedmineMainPage = class RedmineMainPage {
         await this.userInsubmit.click();
     }
     async userInPasswordRecovery() {
-        await this.userIn_a.click();
-        await this.userIn_passrecovery.click();
+        await this.userIna.click();
+        await this.userInpassrecovery.click();
         await this.userRecoveryPasssubmit.click();
     }
 }
