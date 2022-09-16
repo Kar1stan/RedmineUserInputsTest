@@ -31,7 +31,7 @@ test('Should sign in recovery of password', async ({ page }) => {
   const redminePage = new RedmineMainPage(page);
   await redminePage.goto()
   await redminePage.userInPasswordRecovery();
-  await expect(page).toHaveURL('https://redmine.org/account/lost_password');
+  await expect(page).toHaveURL('https://www.redmine.org/account/lost_password');
 });
 
 });
