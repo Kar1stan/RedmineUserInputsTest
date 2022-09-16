@@ -1,36 +1,37 @@
 const { test, expect } = require('@playwright/test');
-const { RedminePageMain } = require('../pageobjects/RedminePageMain');
+const { RedminePageMain } = require('../pageobjects/Redmine.page');
 
-test.describe('RedmineTest', () => {
+test.describe('Redmine Test', () => {
 
-test('redmine test of user up with valid credentials', async ({ page }) => {
+test('Should sign up with valid credentials', async ({ page }) => {
   const redminePage = new RedminePageMain(page);
   await redminePage.goto()
-  await redminePage.UserUpRight();
+  await redminePage.userUpRight();
 });
   
-test('redmine test of user up with invalid credentials', async ({ page }) => {
+test('Should sign up with invalid credentials', async ({ page }) => {
   const redminePage = new RedminePageMain(page);
   await redminePage.goto()
-  await redminePage.UserUpError();
+  await redminePage.userUpError();
 });
   
-test('redmine test of user in with valid credentials', async ({ page }) => {
+test('Should sign in with valid credentials', async ({ page }) => {
   const redminePage = new RedminePageMain(page);
   await redminePage.goto()
-  await redminePage.UserInRight();
+  await redminePage.userInRight();
 });
   
-test('redmine test of user in with invalid credentials', async ({ page }) => {
+test('Should sign in with invalid credentials', async ({ page }) => {
   const redminePage = new RedminePageMain(page);
   await redminePage.goto()
-  await redminePage.UserInError();
+  await redminePage.userInError();
 });
   
-test('redmine test of user in recovery of password', async ({ page }) => {
+test('Should sign in recovery of password', async ({ page }) => {
   const redminePage = new RedminePageMain(page);
   await redminePage.goto()
-  await redminePage.UserInPasswordRecovery() 
+  await redminePage.userInPasswordRecovery();
+  await expect(this.page).toHaveURL('https://redmine.org/account/lost_password');
 });
 
 });
