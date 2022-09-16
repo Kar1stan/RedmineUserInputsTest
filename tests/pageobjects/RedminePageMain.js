@@ -1,6 +1,6 @@
 const { expect } = require('@playwright/test');
 
-exports.RedminePageMain = class RedminePageMain {
+exports.Redmine.page = class Redmine.page {
 
     constructor(page) {
         this.page = page;
