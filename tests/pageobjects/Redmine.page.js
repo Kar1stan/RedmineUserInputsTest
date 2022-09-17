@@ -26,12 +26,12 @@ exports.RedmineMainPage = class RedmineMainPage {
     }
     async userUpRight() {
         await this.userUpa.click();
-        await this.userUplogin.fill("Hextor235");
-        await this.userUppassword.fill("ERxV567B");
-        await this.userUpfirstname.fill("DudlDiDudlDam");
-        await this.userUplastname.fill("DamDidudu");
-        await this.userUpemail.fill("sorocofski288@gmail.com");
-        await this.userUpnick.fill("XerbertYels");
+        await this.userUplogin.fill("BonerXD12");
+        await this.userUppassword.fill("ZXCV456ma");
+        await this.userUpfirstname.fill("KerombitY");
+        await this.userUplastname.fill("TirobitD");
+        await this.userUpemail.fill("megalolo90@gmail.com");
+        await this.userUpnick.fill("PitchburgN1");
         await this.userUpsubmit.click();
     }
     async userUpError() {
@@ -40,8 +40,8 @@ exports.RedmineMainPage = class RedmineMainPage {
     }
     async userInRight() {
         await this.userIna.click();
-        await this.userInlogin.fill("Hextor235");
-        await this.userInpassword.fill("ERxV567B");
+        await this.userInlogin.fill("BonerXD12");
+        await this.userInpassword.fill("ZXCV456ma");
         await this.userInsubmit.click();
     }
     async userInError() {
