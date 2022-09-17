@@ -7,7 +7,7 @@ test('Should sign up with valid credentials', async ({ page }) => {
   const redminePage = new RedmineMainPage(page);
   await redminePage.goto()
   await redminePage.userUpRight();
-  await expect(page).toHaveURL('https://redmine.org/login');
+  await expect(page).toHaveURL('https://redmine.org/account/register');
   await expect(page.locator('#flash_notice')).toBeVisible();
 });
   
