@@ -28,4 +28,5 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm i -D @playwright/test@next
+    - run: npx playwright install  
     - run: npm run test
