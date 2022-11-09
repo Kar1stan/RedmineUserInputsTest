@@ -27,7 +27,7 @@ test('Should register with empty credentials', async ({ page }) => {
   const registerPage = new RegisterPage(page);
   await registerPage.clickRegisterBtn();
   await registerPage.clickRegisterSubmitBtn();
-  await expect(page).toHaveURL('https://www.redmine.org/account/register');
+  await expect(page).toHaveURL('https://redmine.org/account/register');
   await expect(registerPage.registerErrorExplanationMessage).toBeVisible();
 });
 
