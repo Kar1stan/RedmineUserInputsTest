@@ -29,7 +29,7 @@ test('Should sign in with invalid credentials', async ({ page }) => {
   await signInPage.signInWrongUsername(wrong_username);
   await signInPage.signInWrongPasswordWithOneSimbol(wrong_password);
   await signInPage.clickSignInSubmitBtn();
-  await expect(page).toHaveURL('https://www.redmine.org/login');
+  await expect(page).toHaveURL('https://redmine.org/login');
   await expect(signInPage.signInErrorMessage).toBeVisible();
 });
 
