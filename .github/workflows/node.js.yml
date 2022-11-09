@@ -30,3 +30,12 @@ jobs:
     - run: npm i 
     - run: npx playwright install --with-deps
     - run: npm run test
+    
+    - name: Deploy 🚀
+      if: always()
+      uses: JamesIves/github-pages-deploy-action@4.1.5
+      with:
+        branch: gh-pages
+        folder: playwright-report
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
