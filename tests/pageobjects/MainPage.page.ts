@@ -4,8 +4,6 @@ const redmine_url=process.env.REDMINEURL;
 
 export class MainPage{
     readonly page: Page;
-    static RandomFunction:any;
-    
     constructor(page: Page) {
         this.page = page;    
     }
