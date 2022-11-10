@@ -17,7 +17,7 @@ test('Should register with valid credentials', async ({ page }) => {
   await registerPage.registerPasswordConfirmation(registerPage.password);
   await registerPage.registerName(registerPage.name);
   await registerPage.registerSurname(registerPage.surname);
-  await registerPage.registerEmail(registerPage.email+"@email.com");
+  await registerPage.registerEmail(registerPage.email);
   await registerPage.registerIRCnick(registerPage.irc);
   await registerPage.clickRegisterSubmitBtn();
   await expect(page).toHaveURL('https://www.redmine.org/login');
