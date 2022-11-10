@@ -37,7 +37,7 @@ export class RegisterPage{
         this.login=Math.random().toString(36).substring(2,10);
         this.name=Math.random().toString(36).substring(2,8);
         this.surname=Math.random().toString(36).substring(2,8);
-        this.email=Math.random().toString(36).substring(2,8);
+        this.email=Math.random().toString(36).substring(2,8)+"@mail.com";
         this.irc=Math.random().toString(36).substring(2,7);
     }
 
