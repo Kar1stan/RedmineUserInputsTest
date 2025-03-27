@@ -10,6 +10,7 @@ export class SignInPage{
     readonly userUpSuccessfulRegistrationMessage: Locator;
     readonly signInErrorMessage: Locator;
 
+    
     constructor(readonly page:Page) {
         this.userUpSuccessfulRegistrationMessage=page.locator('#flash_notice');
         this.signInBtn=page.locator('a.login');
